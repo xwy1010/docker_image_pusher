@@ -24,7 +24,9 @@ jobs:
         echo "=============================================================================="
         df -hT
         echo "=============================================================================="
-
+   - name: echo var  Aliyun
+    run: echo -n "ALIYUN_REGISTRY_USER: $ALIYUN_REGISTRY_USER"
+    
     # 增加可用磁盘空间
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
